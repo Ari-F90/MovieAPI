@@ -1,7 +1,11 @@
+import "./header.scss";
+
 export function Header() {
   return (
-    <header>
-      <h1>Video movies</h1>
-    </header>
+    <>
+      <header className="header">
+        <h1 className="header__title">Video movies</h1>
+      </header>
+    </>
   );
 }
