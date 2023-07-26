@@ -1,0 +1,13 @@
+.film-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20rem);
+  gap: 4rem;
+  justify-content: center;
+  padding-top: 7rem;
+  background-color: rgb(255, 255, 255);
+  @media (max-width: 500px) {
+    .film-container {
+      grid-template-columns: 100%;
+    }
+  }
+}

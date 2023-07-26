@@ -1,9 +1,15 @@
 .header {
   &__title {
-    font-size: 2.5rem;
+    padding: 3rem;
+    font-size: 6rem;
+    height: 20vh;
     text-align: center;
-    color: white;
-    font-family: "Permanent marker", cursive;
-    margin-top: 3rem;
+    color: rgb(255, 255, 255);
+    font-family: "Bebas Neue", sans-serif;
+  }
+  @media (max-width: 500px) {
+    &__title {
+      font-size: 5rem;
+    }
   }
 }
