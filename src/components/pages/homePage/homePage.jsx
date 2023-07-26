@@ -1,4 +1,4 @@
-import { MovieList } from "../movieList/movieList";
+import { MovieList } from "../../movieList/movieList";
 
 export function HomePage() {
   return (

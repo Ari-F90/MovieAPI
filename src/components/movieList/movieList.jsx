@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { loadMovies } from "../../services/repository/movies.api.repo";
 import { Card } from "../card/card";
+import "./movieList.scss";
 
 export function MovieList() {
   const [movies, setMovies] = useState([]);
@@ -12,12 +13,10 @@ export function MovieList() {
     });
   }, []);
   return (
-    <div>
-      <ul>
-        {movies.map((movie) => (
-          <Card key={movie.id} movie={movie}></Card>
-        ))}
-      </ul>
-    </div>
+    <ul className="film-container">
+      {movies.map((movie) => (
+        <Card key={movie.id} movie={movie}></Card>
+      ))}
+    </ul>
   );
 }
