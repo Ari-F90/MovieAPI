@@ -43,3 +43,8 @@ To run the project locally on your machine, follow these steps:
 - Install the dependencies:
   `npm install`
 - After the installation is complete, you can start the development server by running: `npm run dev`
+
+## Web deployment
+
+To access to the project click on the following link on Netlify:
+https://moviesdborg-api.netlify.app/
