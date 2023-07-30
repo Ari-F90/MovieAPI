@@ -1,22 +1,23 @@
-import { useState, useEffect } from "react";
-import { loadMovies } from "../../services/repository/movies.api.repo";
+/* eslint-disable no-unused-vars */
+import { useEffect, useContext } from "react";
 import { Card } from "../card/card";
 import "./movieList.scss";
+import { MoviesContext } from "../../movies/context/movies.context";
 
 export function MovieList() {
-  const [movies, setMovies] = useState([]);
+  const { movies, loadMovies } = useContext(MoviesContext);
 
   useEffect(() => {
-    loadMovies("/discover/movie").then((data) => {
-      setMovies(data.results);
-      console.log(data);
-    });
-  }, []);
+    loadMovies("/discover/movie");
+  }, [loadMovies]);
+
   return (
-    <ul className="film-container">
-      {movies.map((movie) => (
-        <Card key={movie.id} movie={movie}></Card>
-      ))}
-    </ul>
+    <>
+      <ul className="film-container">
+        {movies.map((item) => (
+          <Card key={item.id} movie={item}></Card>
+        ))}
+      </ul>
+    </>
   );
 }
