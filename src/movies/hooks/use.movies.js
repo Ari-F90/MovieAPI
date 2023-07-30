@@ -23,6 +23,7 @@ export function useMovies(repo) {
     },
     [repo]
   );
+
   const getMovie = useCallback(
     async (id) => {
       try {

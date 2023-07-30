@@ -4,8 +4,10 @@
   gap: 4rem;
   justify-content: center;
   padding-top: 7rem;
-  background-color: rgb(255, 255, 255);
-
+  background-color: rgb(2, 42, 102);
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   @media (max-width: 500px) {
     .film-container {
       grid-template-columns: 100%;
