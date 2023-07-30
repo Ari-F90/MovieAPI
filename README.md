@@ -1,8 +1,25 @@
-# React + Vite
+# Movie Explorer API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
 
-Currently, two official plugins are available:
+This application allows users to explore the latest movies currently in cinemas, fetching data from the The Movie Database API (https://developer.themoviedb.org/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies used
+
+This app uses the following technologies:
+
+- Javascript
+- ReactJS
+- Flux for managing application state and data flow
+- SASS for styling components
+
+## Features
+
+- View a list of the latest movies currently in theaters
+- Click on a movie card to access detailed information, such as description, genre, and vote ratings
+- Responsive design, ensuring seamless usage across various devices
+- Utilizes Flux architecture for efficient state management
+
+## API
+
+The application utilizes the The Movie Database API to fetch movie information. To use the application, you need to obtain an API key by registering on their website (https://www.themoviedb.org/).
